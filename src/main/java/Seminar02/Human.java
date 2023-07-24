@@ -1,4 +1,4 @@
-package org.example.Seminar02;
+package Seminar02;
 
 public class Human extends Buyer{
     @Override

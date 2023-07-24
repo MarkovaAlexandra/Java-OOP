@@ -16,6 +16,7 @@ ________________________________________________________________________________
 - необходимо создать 3 класса собвстенных исключений
  */
 
+// в этом варианте каждое условие проверяется сразу и отдельно
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -50,10 +51,10 @@ public class task3 {
         return second_num;
     }
 
-    public static int third_user_num() throws DivByZeroException {
+    public static int third_user_num() throws DivisionByZeroException {
         int third_num = user_num();
         if (third_num == 0) {
-            throw new DivByZeroException("Деление на ноль недопустимо");
+            throw new DivisionByZeroException("Деление на ноль недопустимо");
         }
         return third_num;
     }
@@ -84,12 +85,14 @@ public class task3 {
             System.out.println(e.getMessage());
         } catch (NumberSumException e) {
             System.out.println(e.getMessage());
-        } catch (DivByZeroException e) {
+        } catch (DivisionByZeroException e) {
             System.out.println(e.getMessage());
         }
     }
 }
 }
+
+// DivisionByZeroException берем из task 2
 class NumberOutOfRangeException extends Exception{
     public NumberOutOfRangeException(String message){
         super(message);
@@ -101,9 +104,3 @@ class NumberSumException extends  Exception{
     }
 }
 
-class DivByZeroException extends Exception{
-    public DivByZeroException (String message){
-
-        super(message);
-    }
-}

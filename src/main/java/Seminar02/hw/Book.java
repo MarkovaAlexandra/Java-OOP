@@ -1,4 +1,4 @@
-package org.example.hw;
+package Seminar02.hw;
 
 public class Book {
     public String name;

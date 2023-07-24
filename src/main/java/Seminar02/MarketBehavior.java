@@ -1,6 +1,4 @@
-package org.example.Seminar02;
-
-import java.util.List;
+package Seminar02;
 
 public interface MarketBehavior {
     void acceptToMarket(Buyer actor);

@@ -1,4 +1,4 @@
-package org.example.hw;
+package Seminar02.hw;
 
 import java.util.List;
 

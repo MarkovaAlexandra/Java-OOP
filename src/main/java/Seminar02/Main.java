@@ -1,8 +1,6 @@
-package org.example.Seminar02;
+package Seminar02;
 
 import java.util.ArrayDeque;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 public class Main {

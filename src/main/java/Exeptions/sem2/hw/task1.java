@@ -1,3 +1,5 @@
+package Exeptions.sem2.hw;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -15,7 +17,7 @@ import java.util.Scanner;
 и передать информацию об ошибке для последующей обработки.
  */
 public class task1 {
-    public static int user_num() {
+    public static int user_num()  {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите число");
         try {
@@ -32,7 +34,6 @@ public class task1 {
         int result = user_num();
         if (result <= 0) {
             throw new InvalidNumberException("Значение не может быть отрицательным");
-
         }
         return result;
     }
@@ -48,7 +49,6 @@ public class task1 {
             }
         }
     }
-
 }
 
 

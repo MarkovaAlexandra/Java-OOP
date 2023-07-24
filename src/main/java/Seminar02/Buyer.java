@@ -1,4 +1,4 @@
-package org.example.Seminar02;
+package Seminar02;
 
 public abstract class Buyer implements BuyerBehavior{
     protected String name;

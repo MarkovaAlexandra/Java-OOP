@@ -1,6 +1,4 @@
-package org.example.hw;
-
-import java.util.*;
+package Seminar02.hw;
 
 public class Student extends Reader {
     @Override

@@ -32,28 +32,21 @@ public class task2 {
 
     public static void main(String[] args) {
             int a = user_num();
-
         while(true) {
             try {
                 int b = not_null_num();
                 int result = a / b;
                 System.out.println(a + " / "+ b + " = " + result);
-
                 break;
-
             } catch (DivisionByZeroException e) {
                 System.out.println("Делитель не может быть 0");
             }
         }
-
-
     }
-
 }
 
 class DivisionByZeroException extends Exception{
     public DivisionByZeroException (String message){
-
         super(message);
     }
 }

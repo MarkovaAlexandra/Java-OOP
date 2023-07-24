@@ -8,6 +8,7 @@ public class VendingMachineHotDrinks extends VendingMachine{
     List<HotDrinks> listHotDrinks = new ArrayList<>();
 
     void initGoods(List<HotDrinks>listHotDrinks){
+
         this.listHotDrinks=listHotDrinks;
     }
     @Override
@@ -22,7 +23,7 @@ public class VendingMachineHotDrinks extends VendingMachine{
     /**
      *
      * @param name название
-     * @param temper темпаратура напитака
+     * @param temper температура напитка
      * @param vol объем напитка
      * @return возвращает лист напитков
      */

@@ -1,4 +1,4 @@
-package org.example.hw;
+package Seminar02.hw;
 
 public abstract class  Reader {
     protected String name;
